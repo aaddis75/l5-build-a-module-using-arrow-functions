@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Confetti from "react-confetti";
 import "./styles.css";
 
-const GreetingMessage = "";
+const GreetingMessage = greet("Aleia");
 
 function App() {
   return (
@@ -16,3 +16,5 @@ function App() {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
+
+import greet from "./greet";
